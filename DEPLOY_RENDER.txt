@@ -1,0 +1,17 @@
+MOVE 5 - RENDER DEPLOYMENT
+
+1. Upload all files in this folder to a GitHub repository.
+2. In Render choose New > Web Service and connect that repository.
+3. Runtime: Python 3
+4. Build Command: pip install -r requirements.txt
+5. Start Command: python server.py
+6. Choose Free for tomorrow's event.
+7. Deploy once. Render assigns an address such as https://move5-esprit.onrender.com
+8. In Render > Environment, add PUBLIC_URL with the exact assigned address, no trailing slash.
+9. Save Changes and redeploy.
+10. Open the public address, choose Multi Match > Host a Match, and verify that the QR address begins https:// and ends ?join=1.
+11. Put the public address into QRFY, then test the printed flyer.
+
+IMPORTANT
+A free Render service sleeps after 15 minutes without inbound traffic. Open the site 5-10 minutes before the event and keep the host lobby open.
+The lobby is stored in memory. A restart clears the active match, which is acceptable for a one-day booth.
